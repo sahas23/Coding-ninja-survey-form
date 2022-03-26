@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="back">
+    <div id="main">
+      <h1 id="title">Coding Ninja Survey Form</h1>
+      <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+
+      <div class="form"><form   id="survey-form">
+        <label id="name-label" for="name">Name</label><br>
+        <input type="text" placeholder="Enter your name" name="Name" id="name" required><br> 
+
+        <label id="email-label" for="email">Email</label><br>
+        <input type="email" placeholder="Enter your email" name="Email" id="email" required><br> 
+
+        <label id="number-label" for="number">Age</label><br>
+        <input type="number" placeholder="Age" name="Age" min=10 max=100 id="number" required><br> 
+        <label for="dropdown">Which option best describes your current role?</label><br>
+         <select name="roles" id="dropdown">
+            <option value="select current role" >Select current role</option>
+             <option value="full-time" >Full-time</option>
+             <option value="part-time">Part-time</option>
+             <option value="student">student</option>
+             <option value="prefer-not to say"> Prefer not to say</option>
+             <option value="other">Other</option>
+
+         </select><br>
+
+         <label for="">Would you recommend Coding ninja to a friend?</label><br>
+         <label for=""><input type="radio" value="definitely" name="recommend" id=""> Definitely </label>
+         <label for=""><input type="radio" value="Maybe" name="recommend" id=""> Maybe</label>
+         <label for=""><input type="radio" value="Not sure" name="recommend" id=""> Not sure</label><br>
+
+         <label for="">What would you like to see improved? (Check all that apply)</label><br>
+         <label for=""><input type="checkbox" value="Front end projects" name="improve" id=""> Front end projects </label>
+         <label for=""><input type="checkbox" value="Back end projects" name="improve" id=""> Back end projects </label>
+         <label for=""><input type="checkbox" value="Challenges" name="improve" id=""> Challenges </label>
+         <label for=""><input type="checkbox" value="Quizes" name="improve" id=""> Quizes </label>
+         <label for=""><input type="checkbox" value="Data Visualization" name="improve" id=""> Data Visualization </label>
+         <label for=""><input type="checkbox" value="Open source community" name="improve" id=""> Open source community</label>
+         <label for=""><input type="checkbox" value="Videos" name="improve" id=""> Videos </label>
+         <label for=""><input type="checkbox" value="Doubt sessions" name="improve" id=""> Doubt sessions </label>
+         <label for=""><input type="checkbox" value="Additional courses" name="improve" id=""> Additional courses </label><br>
+
+
+         <label for="">Any comments or suggestions</label><br>
+         <textarea name="" id="comment" placeholder="Enter your comment here" cols="30" rows="10"></textarea>
+         <br>
+         <button type="submit" id="submit">Submit</button>
+
+
+
+</form></div>
+      
+      
+
+
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
